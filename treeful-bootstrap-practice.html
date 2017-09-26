@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css-reset.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <title>Treeful - Responsive Pages Practice</title>
+
+    <!-- add additional styling when needed -->
+    <style>
+        #logo {
+            background-color: green;
+        }
+        
+        #nav-bar {
+            background-color: saddlebrown;
+        }
+        
+        #set {
+            background-color: grey;
+        }
+        
+        .back {
+            background: #8D9F8D;
+        }
+        
+        #s-o {
+            background-color: #245C19;
+        }
+        
+        #c-a {
+            background-color: #5C320F;
+        }
+        
+        #ad {
+            background-color: red;
+        }
+        
+        #p-f {
+            height: 807px;
+            background-color: green;
+            border: 5px solid saddlebrown;
+        }
+        
+        #p {
+            background-color: saddlebrown;
+        }
+        
+        #side-d {
+            height: 807px;
+            background-color: green;
+            border: 5px solid saddlebrown;
+        }
+        
+        #side {
+            background-color: green;
+            border: 5px solid saddlebrown;
+        }
+        
+        .bottom-margin {
+            margin-bottom: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container text-center">
+
+        <!-- HEADER -->
+        <div class="row back">
+            <!-- notes - place button tag after img?  or before? -->
+            <!-- TODO - add links to three buttons -->
+            <div id="logo" class="col-xs-12 col-sm-3 well">
+                <h1>Treeful</h1>
+            </div>
+            <!-- TODO - make home and trees buttons split evenly -->
+            <!-- home button & img -->
+            <div id="nav-bar" class="col-xs-8 col-sm-6 well">
+                <img src="" alt="">
+                <button class="btn btn-primary">Home</button>
+                <!-- Trees button & img -->
+                <img src="" alt="">
+                <button class="btn btn-primary">Trees</button>
+            </div>
+            <!-- settings button & img -->
+            <div id="set" class="col-xs-4 col-sm-3 well">
+                <img src="" alt="">
+                <button class="btn btn-primary">Settings</button>
+            </div>
+        </div>
+
+        <!-- HERO -->
+        <div class="row well back">
+            <div>
+                <!-- <h3>Buy Our Trees!</h3> -->
+            </div>
+            <!-- hero feature - invisible on phone -->
+            <div id="s-o" class="hidden-xs col-sm-12 col-md-5 bottom-margin well">
+                <a href>
+                    <img src="" alt="">
+                    <button class="btn btn-info">View this Special Offer!</button>
+                </a>
+            </div>
+            <!-- hero call to action -->
+            <div id="c-a" class="col-xs-12 col-md-3 well">
+                <a href>
+                    <img src="" alt="">
+                    <button class="btn btn-info">Buy Our Trees Now!</button>
+                </a>
+            </div>
+            <!-- desktop ad -->
+            <div id="ad" class="hidden-xs hidden-sm col-md-3 well">
+                <!-- adjust this so image does not spill over -->
+                <div>
+                    <strong>AN AD BECAUSE YOU LOVE THEM</strong>
+                    <img src="placeholder-ad.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- BODY -->
+        <div class="row well back">
+            <!-- article feature -->
+            <div id="p-f" class="col-xs-12 col-sm-9 col-md-3 bg-success bottom-margin">
+                <h2>Product Feature!</h2>
+                <img src="trees-images/tree1.jpeg" alt="">
+            </div>
+            <!-- tablet/phone ad -->
+            <div id="ad" class="col-xs-12 col-sm-3 hidden-md hidden-lg">
+                <!-- adjust this so image does not spill over -->
+                <div>
+                    <strong>AN AD BECAUSE YOU LOVE THEM</strong>
+                    <img src="placeholder-ad.jpeg" alt="">
+                </div>
+            </div>
+            <!-- article listing -->
+            <!-- rest of products go here -->
+            <div id="p" class="col-xs-12 col-sm-12 col-md-6 bg-success">
+                <h2>View All of Our Wonderful Trees</h2>
+                <div class="col-xs-6 thumbnail">
+                    <img src="trees-images/tree2.jpeg" alt="">
+                </div>
+                <div class="col-xs-6 thumbnail">
+                    <img src="trees-images/tree3.jpeg" alt="">
+                </div>
+                <div class="col-xs-6 thumbnail">
+                    <img src="trees-images/tree4.jpeg" alt="">
+                </div>
+                <div class="col-xs-6 thumbnail">
+                    <img src="trees-images/tree5.jpeg" alt="">
+                </div>
+                <div class="col-xs-6 thumbnail">
+                    <img src="trees-images/tree6.jpeg" alt="">
+                </div>
+            </div>
+            <!-- sidebar - desktop -->
+            <div id="side-d" class="hidden-xs hidden-sm col-md-3 s">
+                <h2>We thought you might need...</h2>
+                <div class="col-xs-4 thumbnail">
+                    <img src="trees-images/tree2.jpeg" alt="">
+                </div>
+                <div class="col-xs-4 thumbnail">
+                    <img src="trees-images/tree2.jpeg" alt="">
+                </div>
+                <div class="col-xs-4 thumbnail">
+                    <img src="trees-images/tree2.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <!-- TODO - find out why background color isn't working -->
+        <!-- TODO - change to other images -->
+        <div id="side" class="hidden-md hidden-lg row well s back">
+            <div class="hidden-xs col-sm-12 hidden-md hidden-lg">
+                <h2>We thought you might need...</h2>
+                <div class="col-xs-4 thumbnail">
+                    <img src="trees-images/tree2.jpeg" alt="">
+                </div>
+                <div class="col-xs-4 thumbnail">
+                    <img src="trees-images/tree2.jpeg" alt="">
+                </div>
+                <div class="col-xs-4 thumbnail">
+                    <img src="trees-images/tree2.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="row well back">
+            <footer>We do not accept responsibilty for any rotten trees.</footer>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
