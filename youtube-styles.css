@@ -1,0 +1,66 @@
+.nav-btn {
+    border-right: 2px solid black;
+}
+
+.logo-word {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.search-bar {
+    margin-top: 25px;
+}
+
+.videos,
+.channels {
+    border-left: 1px solid black;
+}
+
+.log-in {
+    padding-top: 25px;
+}
+
+.subs {
+    padding-top: 25px;
+}
+
+.thumbnail>img {
+    width: 100%
+}
+
+img {
+    width: 100%
+}
+
+a {
+    color: black;
+    cursor: pointer;
+    text-decoration-color: rgb(17, 17, 17);
+    text-decoration-style: solid;
+    white-space: normal;
+}
+
+a:hover {
+    color: rgba(17, 17, 17, 0.6);
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.margin-bottom {
+    margin-bottom: 30px;
+}
+
+.thumbnail {
+    border: none;
+}
+
+.pr-none {
+    padding-right: 0px;
+}
+
+h4 {
+    margin: 0;
+}

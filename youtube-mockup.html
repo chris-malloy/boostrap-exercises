@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css-reset.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link type="text/css" href="youtube-styles.css" rel="styleshsheet">
+
+    <title>YouTube Mock-up</title>
+
+    <style type="text/css" media="screen">
+        .nav-btn {
+            border-right: 2px solid black;
+        }
+        
+        .logo-word {
+            margin-top: 20px;
+            margin-left: 50px;
+            font-weight: bold;
+        }
+        
+        .search-bar {
+            margin-top: 25px;
+        }
+        
+        .videos,
+        .channels {
+            border-left: 1px solid black;
+        }
+        
+        .log-in {
+            padding-top: 25px;
+        }
+        
+        .subs {
+            padding-top: 25px;
+        }
+        
+        .thumbnail>img {
+            width: 100%
+        }
+        
+        img {
+            width: 100%
+        }
+        
+        a {
+            color: black;
+            cursor: pointer;
+            text-decoration-color: rgb(17, 17, 17);
+            text-decoration-style: solid;
+            white-space: normal;
+        }
+        
+        a:hover {
+            color: rgba(17, 17, 17, 0.6);
+        }
+        
+        p {
+            margin-bottom: 0;
+        }
+        
+        .margin-bottom {
+            margin-bottom: 30px;
+        }
+        
+        .thumbnail {
+            border: none;
+        }
+        
+        .pr-none {
+            padding-right: 0px;
+        }
+        
+        h4 {
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- NAVBAR -->
+
+        <div class="row col-md-12 navbar">
+            <!-- LOGO -->
+            <div class="col-md-3 logo">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a class="navbar-brand" href="youtube-logo.png">
+                            <img src="youtube.png" width="100%" height="40" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 logo-word">
+                        Broadcast Yourself!
+                    </div>
+                </div>
+            </div>
+            <!-- SEARCH BAR -->
+            <div class="col-md-6 search-bar">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <form>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row text-center">
+                                        <div class="col-md-4">
+                                            <a href="#">Home</a>
+                                        </div>
+                                        <div class="col-md-4 videos">
+                                            <a href="#">Videos</a>
+                                        </div>
+                                        <div class="col-md-4 channels">
+                                            <a href="#">Chanels</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <button class="btn btn-primary btn-block">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- LOGIN -->
+            <div class="col-md-3 log-in">
+                <div class="row">
+                    <div class="col-md-9 col-md-offset-3">
+                        <a href="#">Create Account</a> or <a href="#">Sign-In</a>
+                    </div>
+                </div>
+                <div class="row text-center subs">
+                    <div class="col-md-4">
+                        Subscriptions
+                    </div>
+                    <div class="col-md-4">
+                        History
+                    </div>
+                    <div class="col-md-4">
+                        Upload
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- VIDEOS -->
+        <div class="row">
+            <!-- Featured -->
+            <div class="col-md-9">
+                <!-- Main -->
+                <div class="col-md-8 thumbnail">
+                    <h4>Featured</h4>
+                    <img src="https://i.ytimg.com/vi/0GzS_EEJGuk/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDHJ1mlHqiehim5EcPcdQEwjP-4CQ" alt="">
+                </div>
+                <!-- Side Videos -->
+                <div class="col-md-4">
+                    <!-- video -->
+                    <div class="col-md-12 margin-bottom row">
+                        <div class="col-md-7 thumbnail">
+                            <img src="https://i.ytimg.com/vi/DQF0VveSWmM/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAdqOxETnijgyvXx2LpL4YLa3LLZA" alt="">
+                        </div>
+                        <div class="col-md-5 pr-none">
+                            <!-- title -->
+                            <div class="btn-secondary">
+                                <a href="#">
+                                    <p>Title</p>
+                                </a>
+                            </div>
+                            <!-- youtuber -->
+                            <div class="btn-secondary">
+                                <a href="#">
+                                    <p>YouTuber</p>
+                                </a>
+                            </div>
+                            <!-- view : day -->
+                            <div class="btn-secondary">
+                                <a href="#">
+                                    <p>Views-Day</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 margin-bottom row">
+                        <div class="col-md-7 thumbnail">
+                            <img src="https://i.ytimg.com/vi/__dSNCjvysM/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBWSjXNMSvi1kGRcQ3ZopnFmJYYkA" alt="">
+                        </div>
+                        <div class="col-md-5 pr-none">
+                            <!-- title -->
+                            <div class="btn-secondary">
+                                <a href="#">
+                                    <p>Title</p>
+                                </a>
+                            </div>
+                            <!-- youtuber -->
+                            <div class="btn-secondary">
+                                <a href="#">
+                                    <p>YouTuber</p>
+                                </a>
+                            </div>
+                            <!-- view : day -->
+                            <div class="btn-secondary">
+                                <a href="#">
+                                    <p>Views-Day</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 margin-bottom row">
+                        <div class="col-md-7 thumbnail">
+                            <img src="https://i.ytimg.com/vi/JOxhohQYozM/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBQAhkmpjQEIhNSeLTBrZlwJdDYdQ" alt="">
+                        </div>
+                        <div class="col-md-5 pr-none">
+                            <!-- title -->
+                            <div class="btn-secondary">
+                                <a href="#">
+                                    <p>Title</p>
+                                </a>
+                            </div>
+                            <!-- youtuber -->
+                            <div class="btn-secondary">
+                                <a href="#">
+                                    <p>YouTuber</p>
+                                </a>
+                            </div>
+                            <!-- view : day -->
+                            <div class="btn-secondary">
+                                <a href="#">
+                                    <p>Views-Day</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Ad -->
+            <div class="col-md-3 thumbnail">
+                <img src="https://i.ytimg.com/vi/XM23h-eJ08A/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLACrMHa7m0q_irdgp9YoXSET-pDAA" alt="">
+            </div>
+        </div>
+
+        <!-- MORE VIDEOS -->
+        <div class="col-md-12">
+            <h4>More Videos</h4>
+        </div>
+        <div class="row">
+            <!-- top row -->
+            <div class="col-md-2 thumbnail">
+                <img src="https://i.ytimg.com/vi/lO697-X8_ps/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCJOtGJgbjk9y-Wxof-uHTO15nxQg" alt="">
+            </div>
+            <div class="col-md-1">
+                <p>Title</p>
+                <p>Youtuber</p>
+                <p>Views-Day</p>
+            </div>
+            <div class="col-md-2 thumbnail">
+                <img src="https://i.ytimg.com/vi/MPHMrEVJVbQ/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB33bLd0tbR0MYLmVuncACap2lNoQ" alt="">
+            </div>
+            <div class="col-md-1">
+                <p>Title</p>
+                <p>Youtuber</p>
+                <p>Views-Day</p>
+            </div>
+            <div class="col-md-2 thumbnail">
+                <img src="https://i.ytimg.com/vi/ijpKIpQagpU/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDaTgqLGT7qT9GFe2EyDGJfAhV13A" alt="">
+            </div>
+            <div class="col-md-1">
+                <p>Title</p>
+                <p>Youtuber</p>
+                <p>Views-Day</p>
+            </div>
+            <div class="col-md-2 thumbnail">
+                <img src="https://i.ytimg.com/vi/s6NfqLGlYa4/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBI3b1RxoBigFYtUkcUM9EThMNgxg" alt="">
+            </div>
+            <div class="col-md-1">
+                <p>Title</p>
+                <p>Youtuber</p>
+                <p>Views-Day</p>
+            </div>
+            <!-- bottom row -->
+            <div class="col-md-2 thumbnail">
+                <img src="https://i.ytimg.com/vi/-vVpjbjqD-s/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDK5HvgH0WCeIrEyLv0ivrzrfCoXg" alt="">
+            </div>
+            <div class="col-md-1">
+                <p>Title</p>
+                <p>Youtuber</p>
+                <p>Views-Day</p>
+            </div>
+            <div class="col-md-2 thumbnail">
+                <img src="https://i.ytimg.com/vi/qZg6kMZbAzU/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBtCL770QK8wDQaenzGxTReHk09Fg" alt="">
+            </div>
+            <div class="col-md-1">
+                <p>Title</p>
+                <p>Youtuber</p>
+                <p>Views-Day</p>
+            </div>
+            <div class="col-md-2 thumbnail">
+                <img src="https://i.ytimg.com/vi/ziXJO3BCPjI/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCFgL5W503wu0Ejqifu5S8Lm1QI5w" alt="">
+            </div>
+            <div class="col-md-1">
+                <p>Title</p>
+                <p>Youtuber</p>
+                <p>Views-Day</p>
+            </div>
+            <div class="col-md-2 thumbnail">
+                <img src="https://i.ytimg.com/vi/1EumtLQjJ7Y/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAsmB4O0YHehITHI-jmh_hkt5QoMA" alt="">
+            </div>
+            <div class="col-md-1">
+                <p>Title</p>
+                <p>Youtuber</p>
+                <p>Views-Day</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
